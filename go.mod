@@ -1,4 +1,4 @@
-module github.com/apenella/go-ansible
+module github.com/cherwin/go-ansible
 
 go 1.13
 
