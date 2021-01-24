@@ -330,7 +330,7 @@ func (o *AnsiblePlaybookOptions) generateExtraVarsCommand() (string, error) {
 	if err != nil {
 		return "", errors.New("(ansible::generateExtraVarsCommand)", "Error creationg extra-vars JSON object to string", err)
 	}
-	return extraVars, nil
+	return fmt.Sprintf("'%s'", extraVars), nil
 }
 
 // AddExtraVar registers a new extra variable on ansible-playbook options item
